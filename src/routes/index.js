@@ -1,10 +1,13 @@
+require('dotenv').config();
 const { Router } = require('express');
-const routes = require('./routes.js');
 const router = Router();
+const locationRoute = require('./location');
+const currentRoute = require('./current');
+const forecastRoute = require('./forecast');
 
-const ROUTE_BASE = '/v1';
-
-router.use(ROUTE_BASE, routes)
+router.use('/location', locationRoute);
+router.use('/current', currentRoute);
+router.use('/forecast', forecastRoute);
 
 
 module.exports = router;
