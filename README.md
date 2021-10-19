@@ -23,22 +23,22 @@ estos se pueden ver en el archivo 'data.js'
 
 ## A continuacion se explicara cada endpoint del servidor 
 
-# GET a /location
+# GET a /v1/location
 Nos devuelve la informacion de Ip-Api de nuestra ubicacion
 
-# GET a /location?city=[city]
+# GET a /v1/location?city=[city]
 Nos devuelve la informacion de Ip-Api de la ciudad pasada por query, de las ya mencionadas arriba
 
-# GET a /current
+# GET a /v1/current
 Nos devuelve la informacion de Ip-Api de nuestra ubicacion y del clima actual segun OpenWeather
 
-# GET a /current[/city]
+# GET a /v1/current[/city]
 Nos devuelve la informacion de Ip-Api de la ciudad pasada por params y del clima actual segun OpenWeather
 
-# GET a /forecast
+# GET a /v1/forecast
 Nos devuelve la informacion de Ip-Api de nuestra ubicacion y estado del clima a 5 dias segun OpenWeather
 
-# GET a /forecast[/city]
+# GET a /v1/forecast[/city]
 Nos devuelve la informacion de Ip-Api de la ciudad pasada por params y del estado del clima a 5 dias segun OpenWeather
 ```
 ```
