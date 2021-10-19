@@ -18,7 +18,10 @@ npm test
 
 ```python
 El servidor tiene cargadas 5 ciudades para probarse (texas, chicago, kansas, florida y manhattan)
-estos se pueden ver en el archivo 'data.js' (si se desea, se puede cargar otra ciudad en este archivo colocando el nombre de la ciudad con su ip y los endpoints funcionarian igualmente)
+estos se pueden ver en el archivo 'data.js' 
+(si se desea, se puede cargar otra ciudad en este archivo colocando el nombre de la ciudad con su ip y los endpoints funcionarian igualmente)
+
+## A continuacion se explicara cada endpoint del servidor 
 
 # GET a /location
 Nos devuelve la informacion de Ip-Api de nuestra ubicacion
