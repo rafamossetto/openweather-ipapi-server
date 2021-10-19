@@ -25,7 +25,9 @@ router.get('/:city?', async (req, res) => {
     }
     try {
         const responseIpApi = await axios.get(`${IP_API_URL}/${CITYS_IP[city]}`);
-
+        if (responseIpApi.data.status === 'fail') {
+            throw new Error(responseIpApi.data.message)
+        }
         const { countryCode } = responseIpApi.data;
 
         const responseOpenWeather = await axios.get(`${WEATHER_API_URL('forecast')}&q=${city},${countryCode}`);
@@ -35,8 +37,7 @@ router.get('/:city?', async (req, res) => {
             forecast: responseOpenWeather.data
         });
     } catch (error) {
-        console.log(error);
-        return res.json(error.message)
+        return res.status(error.response?.status || 404).json({ error: error.message })
     }
 })
 
