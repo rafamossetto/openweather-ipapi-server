@@ -38,3 +38,6 @@ Nos devuelve la informacion de Ip-Api de nuestra ubicacion y estado del clima a 
 # GET a /forecast[/city]
 Nos devuelve la informacion de Ip-Api de la ciudad pasada por params y del estado del clima a 5 dias segun OpenWeather
 ```
+```
+Nota: se incluyo el archivo .env con la Api Key de OpenWeather para poder probar el server correctamente
+```
