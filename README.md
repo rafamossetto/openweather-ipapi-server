@@ -2,6 +2,11 @@
 
 Challenge tecnico
 
+## Feature: Deployment
+```bash
+Se puede testear el servidor deployeado en Heroku desde el siguiente [link](https://ipapi-openweather-server.herokuapp.com/)
+```
+
 ## Instalacion
 
 Use the package manager [npm](https://www.npmjs.com/)
