@@ -4,7 +4,7 @@ Challenge tecnico
 
 ## Feature: Deployment
 
-Se puede testear el servidor deployeado en Heroku desde el siguiente [link](https://ipapi-openweather-server.herokuapp.com/)
+Se puede testear el servidor deployeado en Heroku desde el siguiente [link](https://ipapi-openweather-server.herokuapp.com/v1/location)
 
 
 ## Instalacion
